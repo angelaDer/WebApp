@@ -1,12 +1,21 @@
 <template>
 <div>
        <h1 class="Main_font">What are you looking for?</h1>
-       <br>
-           <center>
-            <img class="Map_images" src="@/assets/userIMG.png" />
-            <img class="Map_images" src="@/assets/placeIMG.png" />
-            <img class="Map_images" src="@/assets/objectIMG.png"  />
-            </center>
+           <div>
+                <v-container>
+                    <v-layout row wrap style="justify-content: center;">
+                        <v-flex class="customflex">
+                            <img class="Map_images" src="@/assets/userIMG.png" />
+                        </v-flex>
+                        <v-flex class="customflex">
+                            <img class="Map_images" src="@/assets/placeIMG.png" />
+                        </v-flex>
+                        <v-flex class="customflex">
+                            <img class="Map_images" src="@/assets/objectIMG.png"  />
+                        </v-flex>
+                    </v-layout>
+                </v-container>
+            </div>
         <h2 class="Image_font">User</h2>
 </div>
 </template>
@@ -42,6 +51,11 @@
     text-align: center;
     font-weight: normal;
     letter-spacing: 1px;
+}
+
+.customflex
+{
+    flex: 0 1 auto;
 }
 
 </style>
